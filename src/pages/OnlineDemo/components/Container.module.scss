@@ -1,0 +1,16 @@
+.Container {
+  &_Search {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+      margin-left: 60px;
+      width: 400px;
+    }
+  }
+}

@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import 'antd/dist/antd.css'
+import './index.scss'
+import HomeView from './pages/Home'
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <HomeView />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

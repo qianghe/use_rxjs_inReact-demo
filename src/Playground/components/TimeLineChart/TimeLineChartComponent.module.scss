@@ -1,0 +1,32 @@
+@import '../../../assets/styles/variables.scss';
+
+.TimeLineChart {
+  min-height: 7rem;
+  position: relative;
+  padding-bottom: 3rem;
+
+  @media screen and (max-width: $max-mobile-screen-width) {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: $min-desktop-screen-width) {
+    margin-left: 0.5rem;
+  }
+
+  &__Download {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    color: $lightgray-color;
+
+    &:hover {
+      color: $gray-color;
+    }
+
+    &:active {
+      margin-bottom: -1px;
+    }
+  }
+}

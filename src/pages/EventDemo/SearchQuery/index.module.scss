@@ -1,0 +1,37 @@
+.SearchQuery {
+  &_Title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &_Loading,
+  &_Error {
+    margin-top: 10px;
+  }
+  
+  &_Loading {
+    color: blue;
+  }
+  &_Error {
+    color: red;
+  }
+
+  &_Content {
+    p {
+      margin-top: 10px;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      margin-right: 8px;
+      color: #999;
+    }
+  }
+}

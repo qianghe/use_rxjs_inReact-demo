@@ -1,0 +1,15 @@
+.Content {
+  >div:nth-of-type(1) {
+    margin-top: 12px;
+  }
+
+  >ul {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  &_Empty {
+    padding: 20px;
+    text-align: center;
+  }
+}

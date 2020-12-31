@@ -1,0 +1,20 @@
+.trend-unit {
+  &--up {
+    color: #EE666B;
+  }
+  &--down {
+    color: #85E285;
+  }
+
+  &--equal {
+    font-family: PingFangSC-Medium;
+  }
+
+  .boo-icon {
+    margin-right: -4px;
+  }
+
+  .trend-unit-value {
+    font-weight: 500;
+  }
+}

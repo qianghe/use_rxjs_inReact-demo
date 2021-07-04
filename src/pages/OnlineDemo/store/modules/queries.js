@@ -2,7 +2,7 @@ import { ofType } from 'redux-observable'
 import _ from 'lodash'
 import { of, interval } from 'rxjs'
 import {
-  startWith, map, distinctUntilChanged, combineLatest, filter, tap,
+  startWith, map, distinctUntilChanged, combineLatest, filter,
   catchError, switchMap, mergeMap, takeUntil
 } from 'rxjs/operators'
 import { QUERY_PRODUCTS_URL, QUERY_BRANDS_URL } from 'src/api'

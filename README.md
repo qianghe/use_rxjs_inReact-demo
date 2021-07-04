@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+## use_rxjs_inReact-demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Rxjs是响应式编程思想的产物，其提供的关于“数据流”的操作符非常的丰富：数据流的产生、数据流之间的关系处理、高阶数据流等都能非常优雅的帮助解决业务上的一些复杂的数据变更场景。
 
-## Available Scripts
+Rxjs的实现基于两种设计模式：「观察订阅模式」 + 「迭代器模式」。
 
-In the project directory, you can run:
+其主要的几个概念是：Observer、Subject、Observable、Operator、弹珠图。[查阅官网](https://rxjs.dev/guide/overview)
 
-### `yarn start`
+(推荐一个学习Rxjs的网站，针对每个概念、operator都有demo：[LearnRxjs](https://www.learnrxjs.io/))
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 代码Demo 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* 参考[Thinkrx](https://thinkrx.io/rxjs/) 使用弹珠图可视化了两个操作符的工作方式；
+* 常见场景使用rxjs来解决的姿势：对数据（比如store）以流集合的方式进行管理、通过SwitchMap解决input搜索问题；
+* 结合业务场景使用redux-observable：统一变更为数据流个管理，比如轮训、store变更等。
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+当然其实这些都是很简单的小demo，如果想要使用好rxjs还是要多实践、多结合自己的业务场景输出解决方案的。
